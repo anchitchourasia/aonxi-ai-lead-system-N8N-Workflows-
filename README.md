@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 > **Built for:** Aonxi Technologies Assignment  
-> **Author:** [Your Name]  
+> **Author:** Anchit  
 > **Date:** January 2026  
 > **Status:** Production Ready ✅
 
@@ -47,74 +47,6 @@ The **Aonxi AI Lead System** is an enterprise-grade, AI-powered lead management 
 - **AI Agents:** 3 (Budget Analyzer, Urgency Detector, Intent Classifier)
 - **Total Nodes:** 50+
 - **Current Performance:** 67% HOT lead rate, 89% budget disclosure
-
----
-
-## 🏗️ Architecture
-
-### System Diagram
-┌─────────────────────────────────────────────────────────────┐
-│ WORKFLOW 1: LEAD CAPTURE │
-└─────────────────────────────────────────────────────────────┘
-
-User Chat
-↓
-AI Chatbot (Conversational Lead Qualification)
-↓
-┌─────────────────────────────────────┐
-│ 3-AGENT AI COUNCIL │
-│ ┌──────────┐ ┌──────────┐ ┌────┐│
-│ │ Budget │ │ Urgency │ │Intent││
-│ │ Analyzer │ │ Detector │ │ Class││
-│ └──────────┘ └──────────┘ └────┘│
-│ ↓ ↓ ↓ │
-│ LEAD SCORE (0-100) │
-└─────────────────────────────────────┘
-↓
-IF: Score-Based Routing
-├─ HOT (70-100) → Priority Workflow
-├─ WARM (40-69) → Standard Workflow
-└─ COLD (0-39) → Nurture Workflow
-↓
-┌────────────────────────────────┐
-│ Parallel Execution │
-├─ HubSpot CRM (Contact + Deal) │
-├─ Gmail (Personalized Email) │
-├─ Slack (Team Alert) │
-└─ Google Sheets (Data Log) │
-└────────────────────────────────┘
-↓
-Dynamic Follow-up JSON Generated
-
-┌─────────────────────────────────────────────────────────────┐
-│ WORKFLOW 2: AI OPTIMIZATION │
-└─────────────────────────────────────────────────────────────┘
-
-Schedule Trigger (Every 7 days)
-↓
-Fetch All Leads (Google Sheets)
-↓
-Compute Comprehensive Metrics
-├─ Total leads, HOT/WARM/COLD rates
-├─ Avg score, budget disclosure rate
-├─ Business email rate, phone collection
-└─ Trends (IMPROVING/DECLINING)
-↓
-AI Optimization Council (GPT-4)
-├─ Analyzes system performance
-├─ Identifies critical issues
-├─ Generates recommendations
-└─ Calculates health score
-↓
-Parse & Merge Analysis
-↓
-├─────────────────────┬──────────────────────┐
-↓ ↓ ↓
-Slack Report Google Sheets Log Critical Check (IF)
-(Weekly) (Historical) ├─ TRUE: Alert @channel
-└─ FALSE: "System Healthy"
-
-text
 
 ---
 
